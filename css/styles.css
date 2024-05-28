@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #06039b;
+  --bs-primary: #ffc340;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,12 +42,12 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 5, 29, 65;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-primary-rgb: 64, 0, 114;
+  --bs-secondary-rgb: 64, 0, 114;
+  --bs-success-rgb: 64, 0, 114;
+  --bs-info-rgb: 64, 0, 114;
+  --bs-warning-rgb: 64, 0, 114;
+  --bs-danger-rgb: 64, 0, 114;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -61,7 +61,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #400072;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1f057a;
-  --bs-link-hover-color: #4208c9;
+  --bs-link-color: #400072;
+  --bs-link-hover-color: #b957f8;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -97,7 +97,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #fff;
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -118,7 +118,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #ffc107;
 }
 
 h1, .h1 {
@@ -318,7 +318,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #ffc107;
   text-align: left;
 }
 
@@ -566,6 +566,7 @@ progress {
 }
 
 .list-inline {
+  color: #000;
   padding-left: 0;
   list-style: none;
 }
@@ -594,7 +595,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #ffc107;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -625,7 +626,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #ffc107;
 }
 
 .container,
@@ -1149,6 +1150,7 @@ progress {
     width: 100%;
   }
   .offset-md-0 {
+    color: #000;
     margin-left: 0;
   }
   .offset-md-1 {
@@ -1158,6 +1160,7 @@ progress {
     margin-left: 16.66666667%;
   }
   .offset-md-3 {
+    color: #000;
     margin-left: 25%;
   }
   .offset-md-4 {
@@ -3613,7 +3616,7 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-disabled-color: #fff;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -6663,7 +6666,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #ffc340    !important;
   background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -7348,10 +7351,12 @@ textarea.form-control-lg {
 }
 
 .flex-grow-1 {
+  color: #000;
   flex-grow: 1 !important;
 }
 
 .flex-shrink-0 {
+  color: #000;
   flex-shrink: 0 !important;
 }
 
@@ -7496,6 +7501,7 @@ textarea.form-control-lg {
 }
 
 .m-0 {
+  color: #000;
   margin: 0 !important;
 }
 
@@ -7650,6 +7656,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
+  color: #400072;
   margin-bottom: 0 !important;
 }
 
@@ -7662,6 +7669,7 @@ textarea.form-control-lg {
 }
 
 .mb-3 {
+  color: #000;
   margin-bottom: 1rem !important;
 }
 
@@ -7670,6 +7678,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
+  color: #000;
   margin-bottom: 3rem !important;
 }
 
@@ -8038,7 +8047,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: --bs-link-color !important;
 }
 
 .text-secondary {
@@ -10928,7 +10937,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #000;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10938,7 +10947,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #02648e;
+  background-color: #400072;
 }
 
 .dev-icons {
